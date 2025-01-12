@@ -51,9 +51,15 @@
             margin-bottom: 1rem;
         }
 
-        p {
-            font-size: 1rem;
-            margin: 0.5rem 0;
+        .contact-container {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-column {
+            flex: 1;
+            min-width: 200px;
         }
 
         ul {
@@ -96,10 +102,6 @@
             h2 {
                 font-size: 1.3rem;
             }
-
-            p {
-                font-size: 0.95rem;
-            }
         }
 
         @media (max-width: 480px) {
@@ -118,10 +120,6 @@
             h2 {
                 font-size: 1.2rem;
             }
-
-            p {
-                font-size: 0.9rem;
-            }
         }
     </style>
 </head>
@@ -134,17 +132,23 @@
     <main>
         <section>
             <h2>Contact Information</h2>
-            <ul>
-                <li><strong>Name:</strong> Vedang Joshi</li>
-                <li><strong>Address:</strong> Kathora Naka, Amravati</li>
-                <li><strong>Email:</strong> <a href="mailto:vsjoshi772@gmail.com">vsjoshi772@gmail.com</a></li>
-                <li><strong>Portfolio:</strong> <a href="https://vedangjoshi.netlify.app" target="_blank">https://vedangjoshi.netlify.app</a></li>
-            </ul>
-            <ul>
-                <li><strong>Name:</strong> Piyush Hood</li>
-                <li><strong>Address:</strong> Mahal, Nagpur</li>
-                <li><strong>Email:</strong> <a href="mailto:piyushhood123@gmail.com">piyushhood123@gmail.com</a></li>
-            </ul>
+            <div class="contact-container">
+                <div class="contact-column">
+                    <ul>
+                        <li><strong>Name:</strong> Vedang Joshi</li>
+                        <li><strong>Address:</strong> Kathora Naka, Amravati</li>
+                        <li><strong>Email:</strong> <a href="mailto:vsjoshi772@gmail.com">vsjoshi772@gmail.com</a></li>
+                        <li><strong>Portfolio:</strong> <a href="https://vedangjoshi.netlify.app" target="_blank">https://vedangjoshi.netlify.app</a></li>
+                    </ul>
+                </div>
+                <div class="contact-column">
+                    <ul>
+                        <li><strong>Name:</strong> Piyush Hood</li>
+                        <li><strong>Address:</strong> Mahal, Nagpur</li>
+                        <li><strong>Email:</strong> <a href="mailto:piyushhood123@gmail.com">piyushhood123@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section>
